@@ -79,7 +79,7 @@ app.use(errorController.get404);
 
 app.use((error, req, res, next) => {
   // res.status(error.httpStatusCode).render(...);
-  console.log(error);
+  console.log({ error });
   res.redirect("/500");
 });
 
